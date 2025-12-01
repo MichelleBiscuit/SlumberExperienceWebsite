@@ -42,7 +42,7 @@ body {
 
 .headly {
     display: block;
-    background-image: url("Images/TryptamineBackground.png");
+    background-image: url("images/TryptamineBackground.png");
     text-align: center;
     width: 100%;
     outline: 5px groove #d6c06d;
@@ -53,7 +53,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url(Images/TryptamineBackground.png);
+    background-image: url(images/TryptamineBackground.png);
     outline: 5px groove #d6c06d;
     border-radius: 10px;
     margin-top: 25px;
@@ -65,7 +65,7 @@ body {
 .MainNav > a {
     text-align: center;
     color: #d6c06d;
-    background-image: url(Images/TryptamineBackground.png);
+    background-image: url(images/TryptamineBackground.png);
     margin: 1rem;
     padding: 0.1rem 1rem;
     outline: 3px groove #d6c06d;
@@ -81,6 +81,7 @@ a {
 
 p {
     margin: 10px;
+    font-size: x-large;
 }
 
 .MainNav > a:hover {
@@ -88,13 +89,13 @@ p {
     outline-color:#54f9ff;
     transform: translateY(-2px);
     transform: scale(1.1, 1.1);
-    background-image: url(Images/buttonbackgroundhover.png);
+    background-image: url(images/buttonbackgroundhover.png);
 }
 
 .MainNav > a:active {
     color: #ffffff;
     outline: 2px groove #ffffff;
-    background-image: url(Images/buttonbackgroundpressed.png);
+    background-image: url(images/buttonbackgroundpressed.png);
     transform: scale(0.95, 0.95);
 }
 
@@ -109,7 +110,7 @@ p {
     transition: 0.3s ease all;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     .bodygrid {
         display: grid;
         grid-template-columns: 50% 0.1fr 1fr;
@@ -126,7 +127,7 @@ p {
 .about {
     display: block;
     text-align: center;
-    background-image: url(Images/TryptamineBackground.png);
+    background-image: url(images/TryptamineBackground.png);
     outline: 5px groove #d6c06d;
     border-radius: 10px;
     flex-wrap: wrap;
@@ -136,10 +137,10 @@ p {
 .pictures {
     display: block;
     text-align: center;
-    background-image: url(Images/TryptamineBackground.png);
+    background-image: url(images/TryptamineBackground.png);
     outline: 5px groove #d6c06d;
     border-radius: 10px;
-    max-height: 1fr
+    max-height: 1fr;
 }
 
 .pictures > img {
@@ -148,8 +149,4 @@ p {
     margin-bottom: 5%;
     border-radius: 25%;
     outline: 5px groove #d6c06d;
-}
-
-.funnyanswer {
-    font-size: xx-large;
 }
