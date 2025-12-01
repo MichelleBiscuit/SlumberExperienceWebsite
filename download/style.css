@@ -1,28 +1,75 @@
 body {
+    display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #d6c06d;
     text-shadow: 3px 3px 0px #000000;
+    background: radial-gradient(#0a0014, #000000);
+    background-repeat: repeat-y;
+    background-size: 100% 44px;
     margin: 0;
     height: 100%;
     width: 100%;
     position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    box-shadow: inset 0px 0px 20px 13px rgba(0,0,0,0.67);
+    outline: 6px groove #d6c06d;
+    border-radius: 8px;
+    transition: 0.3s ease all;
+    background-image: url(images/TryptamineBackground.png);
+    justify-content: start;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #d6c06d;
+    transition: 0.3s ease all;
+    user-select: none;
+}
+
+a > img {
+    filter: drop-shadow(0px 0px 0px #00000000);
+    transition: 0.3s ease all;
 }
 
 
-.background {
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    background: radial-gradient(#0a0014, #000000);
-    background-repeat: repeat-y;
-    background-size: 100% 44px;
-    display: grid;
-    height: 100%;
-    grid-template-areas: "stack";
-    place-items: center;
+a:hover {
+    transform: scale(115%, 115%);
+    text-shadow: 4px 5px 3px #000000;
+    transition: 0.3s ease all;
+}
+
+a:hover > img {
+    filter: drop-shadow(4px 5px 3px #000000);
+    transition: 0.3s ease all;
+}
+
+a:active {
+    transform: scale(85%, 85%);
+    transition: 0.3s ease all;
+}
+
+a:active > img {
+    filter: drop-shadow(0px 0px 0px #00000000);
+    transition: 0.3s ease all;
+}
+
+.disabled {
+    color: #b1b1b1;
+}
+
+
+a > img {
     margin: 0px;
-}
-
-.foreground {
-    display: grid;
-    grid-area: stack;
+    width: 65px;
+    height: 65px;
 }
