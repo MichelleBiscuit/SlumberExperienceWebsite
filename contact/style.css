@@ -1,7 +1,78 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #0a0014;
+    color: #d6c06d;
+    text-shadow: 3px 3px 0px #000000;
+    background: radial-gradient(#0a0014, #000000);
+    background-repeat: repeat-y;
+    background-size: 100% 44px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15%;
+    outline: 6px groove #d6c06d;
+    box-shadow: inset 0px 0px 20px 13px rgba(0,0,0,0.67);
+    border-radius: 8px;
+    background-image: url(images/TryptamineBackground.png);
+    align-items: center;
+}
+
+p {
+    margin: 10px 20px 10px 20px;
+}
+
+a {
+    display: flex;
+    color: #d6c06d;
+    height: 30px;
+    width: 350px;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: inset 0px 0px 20px 13px rgba(0,0,0,0.67);
+    outline: 6px groove #d6c06d;
+    border-radius: 8px;
+    transition: 0.3s ease all;
+    background-image: url(images/TryptamineBackground.png);
+    justify-content: start;
+    align-items: center;
     justify-content: center;
+}
+
+a:hover {
+    transform: scale(115%, 115%);
+    text-shadow: 4px 5px 3px #000000;
+    transition: 0.3s ease all;
+}
+
+a:active {
+    transform: scale(85%, 85%);
+    transition: 0.3s ease all;
+}
+
+.hide {
+    background-color: #000000;
+    color: #000000;
+    text-shadow: none;
+    width: fit-content;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.hide:hover {
+    background-color: #00000000;
+    text-shadow: 3px 3px 0px #000000;
+    color: #d6c06d;
+    transition: 0.3s;
+}
+
+.hide:active {
+    background-color: #00000000;
+    text-shadow: 3px 3px 0px #000000;
+    color: #d6c06d;
+    transition: 0.3s;
 }

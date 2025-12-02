@@ -1,7 +1,122 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #0a0014;
+    color: #d6c06d;
+    text-shadow: 3px 3px 0px #000000;
+    background: radial-gradient(#0a0014, #000000);
+    background-repeat: repeat-y;
+    background-size: 100% 44px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 350px;
+    margin-top: 10px;
+    box-shadow: inset 0px 0px 20px 13px rgba(0,0,0,0.67);
+    outline: 6px groove #d6c06d;
+    border-radius: 8px;
+    transition: 0.3s ease all;
+    background-image: url(images/TryptamineBackground.png);
+    justify-content: start;
+    align-items: center;
     justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    box-shadow: inset 0px 0px 20px 13px rgba(0,0,0,0.67);
+    outline: 6px groove #d6c06d;
+    border-radius: 8px;
+    background-image: url(images/TryptamineBackground.png);
+    height: fit-content;
+    width: 85%;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.bloginside {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 750px) {
+    .bloginside {
+        flex-direction: column;
+    }
+}
+
+
+.imgcont {
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+    margin: 25px 5px 25px 50px;
+    max-width: 85%;
+    overflow: hidden;
+    border-radius: 25%;
+    outline: 5px groove #d6c06d;
+
+}
+
+@media screen and (max-width: 750px) {
+    img {
+        margin: 10px 0px 10px 0px;
+        align-self: center;
+    }
+
+}
+
+
+p {
+    font-size: x-large;
+    text-align: left;
+    padding-left: 40px;
+    max-width: 55%;
+}
+
+@media screen and (max-width: 750px) {
+    p {
+    font-size: large;
+    text-align: left;
+    padding-left: 20px;
+    max-width: fit-content;
+    }
+    
+}
+
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #d6c06d;
+    transition: 0.3s ease all;
+    user-select: none;
+}
+
+
+a:hover {
+    transform: scale(115%, 115%);
+    text-shadow: 4px 5px 3px #000000;
+    transition: 0.3s ease all;
+}
+
+a:active {
+    transform: scale(85%, 85%);
+    transition: 0.3s ease all;
 }

@@ -10,12 +10,31 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topleft {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height: 30px;
+    width: 350px;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 20px 13px rgba(0,0,0,0.67);
+    outline: 6px groove #d6c06d;
+    border-radius: 8px;
+    transition: 0.3s ease all;
+    background-image: url(images/TryptamineBackground.png);
     justify-content: center;
     align-items: center;
 }
 
-div {
+
+.mainguy {
     display: flex;
+    place-self: center;
+    margin-top: 12%;
     flex-direction: column;
     height: fit-content;
     width: 300px;

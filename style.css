@@ -69,6 +69,7 @@ body {
 .MainNav > a {
     text-align: center;
     color: #d6c06d;
+    filter: drop-shadow(0px 0px 0px #00000000);
     background-image: url(images/TryptamineBackground.png);
     margin: 1rem;
     padding: 0.1rem 1rem;
@@ -81,6 +82,7 @@ body {
 a {
     color:#54f9ff;
     outline-color:#54f9ff;
+    text-decoration: none;
 }
 
 p {
@@ -91,6 +93,7 @@ p {
 .MainNav > a:hover {
     color:#54f9ff;
     outline-color:#54f9ff;
+    filter: drop-shadow(5px 5px 5px #000000);
     transform: translateY(-2px);
     transform: scale(1.1, 1.1);
     background-image: url(images/buttonbackgroundhover.png);
